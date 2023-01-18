@@ -41,4 +41,11 @@ if (inAniItems) {
 		//inAniItemDecor.childNodes.style.animationDelay = `${inAniItemNamber}s`;
 	}
 }
+
+let timerinAniItem = setTimeout(function tick() {
+	const AniItemWrapper =  document.querySelector('.index-animation');
+	if (AniItemWrapper) {
+		AniItemWrapper.classList.add('_active');
+	}
+}, 3700);
 //============================================================
